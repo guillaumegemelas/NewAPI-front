@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-dark bg-primary ">
       <div className="container-fluid justify-content-center">
-        <Image src={pic} style={{ width: "130px", height: "40px" }} />
+        <Image src={pic} style={{ width: "130px", height: "40px" }} alt="pic" />
         <Link legacyBehavior href="/">
           <a className="navbar-brand mx-4">A la une</a>
         </Link>
