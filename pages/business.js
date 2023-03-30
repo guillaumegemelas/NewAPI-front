@@ -4,7 +4,7 @@ import Link from "next/link";
 //import pour key unique
 import { v4 as uuidv4 } from "uuid";
 
-export default function business(props) {
+export default function Business(props) {
   console.log(props, "log props business+++++++++++++++++++++");
   return (
     <div className="container px-3 pt-5 ">

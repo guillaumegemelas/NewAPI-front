@@ -4,7 +4,7 @@ import Link from "next/link";
 //import pour key unique
 import { v4 as uuidv4 } from "uuid";
 
-export default function tech(props) {
+export default function Tech(props) {
   return (
     <div className="container px-3 pt-5 ">
       <h2 className="text-center fw-bolder my-2">Actualités Tech</h2>
