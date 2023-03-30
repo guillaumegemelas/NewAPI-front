@@ -21,10 +21,10 @@ The main page is getting news from France (top headlines) with 24h delay (in fre
 
 You can get other news, as sports from dropdown menu
 
-<img width="1000" alt="mainpage" src="https://user-images.githubusercontent.com/121306549/228957083-c2a08781-3592-4423-8108-8699acd69913.png">
+<img width="1000" alt="dropdown" src="https://user-images.githubusercontent.com/121306549/228957103-9cf6519e-ac7e-44b7-a591-521d375d6d0a.png">
 
 if you want to see a complete article, clic on the "voir plus" link of the card
 
-<img width="1000" alt="dropdown" src="https://user-images.githubusercontent.com/121306549/228957103-9cf6519e-ac7e-44b7-a591-521d375d6d0a.png">
+<img width="1000" alt="entertainment" src="https://user-images.githubusercontent.com/121306549/228961014-ffd60524-ec80-4e58-a47c-7b02ed70f7d9.png">
 
 you will be redirect to the original article.
