@@ -43,7 +43,10 @@ export default function Business(props) {
 }
 
 export async function getStaticProps() {
-  const result = await fetch("http://localhost:3000/getnewsbusiness");
+  //   const result = await fetch("http://localhost:3000/getnewsbusiness");
+  const result = await fetch(
+    "https://site--news-api-back--zqfvjrr4byql.code.run/getnewsbusiness"
+  );
 
   const data = await result.json();
 

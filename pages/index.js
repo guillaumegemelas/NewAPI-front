@@ -61,7 +61,10 @@ export default function Home(props) {
 }
 
 export async function getStaticProps() {
-  const result = await fetch("http://localhost:3000/getnews");
+  // const result = await fetch("http://localhost:3000/getnews");
+  const result = await fetch(
+    "https://site--news-api-back--zqfvjrr4byql.code.run/getnews"
+  );
 
   const data = await result.json();
 

@@ -42,7 +42,10 @@ export default function Tech(props) {
 }
 
 export async function getStaticProps() {
-  const result = await fetch("http://localhost:3000/getnewstech");
+  //   const result = await fetch("http://localhost:3000/getnewstech");
+  const result = await fetch(
+    "https://site--news-api-back--zqfvjrr4byql.code.run/getnewstech"
+  );
 
   const data = await result.json();
 
