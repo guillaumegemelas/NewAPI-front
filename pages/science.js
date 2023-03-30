@@ -43,10 +43,10 @@ export default function Science(props) {
 }
 
 export async function getStaticProps() {
-  //   const result = await fetch("http://localhost:3000/getnewsscience");
-  const result = await fetch(
-    "https://site--news-api-back--zqfvjrr4byql.code.run/getnewsscience"
-  );
+  const result = await fetch("http://localhost:3000/getnewsscience");
+  //   const result = await fetch(
+  //     "https://site--news-api-back--zqfvjrr4byql.code.run/getnewsscience"
+  //   );
 
   const data = await result.json();
 

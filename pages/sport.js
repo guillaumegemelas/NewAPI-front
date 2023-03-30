@@ -45,10 +45,10 @@ export default function Sport(props) {
 }
 
 export async function getStaticProps() {
-  //   const result = await fetch("http://localhost:3000/getnewssport");
-  const result = await fetch(
-    "https://site--news-api-back--zqfvjrr4byql.code.run/getnewssport"
-  );
+  const result = await fetch("http://localhost:3000/getnewssport");
+  //   const result = await fetch(
+  //     "https://site--news-api-back--zqfvjrr4byql.code.run/getnewssport"
+  //   );
 
   const data = await result.json();
 

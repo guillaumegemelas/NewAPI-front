@@ -43,10 +43,10 @@ export default function Sante(props) {
 }
 
 export async function getStaticProps() {
-  //   const result = await fetch("http://localhost:3000/getnewshealth");
-  const result = await fetch(
-    "https://site--news-api-back--zqfvjrr4byql.code.run/getnewshealth"
-  );
+  const result = await fetch("http://localhost:3000/getnewshealth");
+  //   const result = await fetch(
+  //     "https://site--news-api-back--zqfvjrr4byql.code.run/getnewshealth"
+  //   );
 
   const data = await result.json();
 
