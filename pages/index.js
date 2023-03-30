@@ -1,6 +1,9 @@
 import Head from "next/head";
 // import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import Image from "next/image";
+
+import pic1 from "../public/assets/picture.jpg";
 
 //import pour key unique
 import { v4 as uuidv4 } from "uuid";
@@ -18,7 +21,12 @@ export default function Home(props) {
       </Head>
 
       {/* d-flex pour display:flex et fle-column pour flex-direction:column */}
-      <div className="container px-3 pt-5 d-flex flex-column ">
+
+      <div className="container px-3 pt-5 d-flex flex-column">
+        <div className="position-absolute position-fixed">
+          <Image src={pic1} alt="pic" style={{ width: 1200 }} />
+        </div>
+
         <h2 className="text-center fw-bolder my-2">Les dernières actualités</h2>
 
         <div className="row justify-content-center mt-5">
