@@ -4,11 +4,11 @@ import Link from "next/link";
 //import pour key unique
 import { v4 as uuidv4 } from "uuid";
 
-export default function business(props) {
-  console.log(props, "log props business+++++++++++++++++++++");
+export default function science(props) {
+  console.log(props, "log de props----sciences---");
   return (
     <div className="container px-3 pt-5 ">
-      <h2 className="text-center fw-bolder my-2">Actualités Business</h2>
+      <h2 className="text-center fw-bolder my-2">Actualités Sciences</h2>
       <div className="row mt-5">
         {props.data.articles.map((item) => (
           <div className="col-12 col-lg-4" key={uuidv4()}>
@@ -43,7 +43,7 @@ export default function business(props) {
 }
 
 export async function getStaticProps() {
-  const result = await fetch("http://localhost:3000/getnewsbusiness");
+  const result = await fetch("http://localhost:3000/getnewsscience");
 
   const data = await result.json();
 

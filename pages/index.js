@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
+// import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 
 //import pour key unique
@@ -16,15 +16,19 @@ export default function Home(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container px-4 pt-5">
-        <h2 className="text-center my-2">Les dernières actualités en France</h2>
+
+      {/* d-flex pour display:flex et fle-column pour flex-direction:column */}
+      <div className="container px-3 pt-5 d-flex flex-column ">
+        <h2 className="text-center fw-bolder my-2">Les dernières actualités</h2>
+
         <div className="row justify-content-center mt-5">
           {props.data.articles.map((item) => (
-            <div className="col-12 col-lg-6 m-3" key={uuidv4()}>
-              <div className="card h-150 shadow-sm">
+            // la div tient tout l'ecrzn en small (12) et 7/12 en lazrge screen
+            <div className="col-12 col-lg-7 m-3" key={uuidv4()}>
+              <div className="card shadow">
                 <div className="card-body">
                   <h5 className="card-title my-2">{item.title}</h5>
-                  <h6 className="card-subtitle my-3 text-muted ">
+                  <h6 className="card-subtitle my-3 text-black-50 ">
                     {item.author} - {item.publishedAt.slice(0, 10)}
                   </h6>
                   <Link
@@ -32,8 +36,10 @@ export default function Home(props) {
                     className="ml-auto card-link"
                     href={item.url}
                   >
-                    voir plus
+                    {/* text-decoration none pour enlever le souligné du lien */}
+                    <a className="ml-auto text-decoration-none">voir plus</a>
                   </Link>
+                  {/* <a className="btn btn-outline-danger">test</a> */}
                 </div>
               </div>
             </div>
