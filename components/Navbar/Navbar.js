@@ -47,7 +47,7 @@ export default function Navbar() {
               plus
             </a>
             <ul
-              className="dropdown-menu"
+              className="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
               aria-labelledby="navbarDropdownMenuLink"
             >
               <li>
