@@ -46,6 +46,7 @@ export default function Sport(props) {
 
 export async function getStaticProps() {
   const result = await fetch("http://localhost:3000/getnewssport");
+  //test avec API depuis northflank
   //   const result = await fetch(
   //     "https://site--news-api-back--zqfvjrr4byql.code.run/getnewssport"
   //   );

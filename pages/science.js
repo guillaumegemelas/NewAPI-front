@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-//import pour key unique
+//import pour key unique--
 import { v4 as uuidv4 } from "uuid";
 
 export default function Science(props) {
