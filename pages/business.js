@@ -53,5 +53,5 @@ export async function getStaticProps() {
   //data renvoie bien un objet avec un tableau d'articles
   console.log(data);
 
-  return { props: { data } };
+  return { props: { data }, revalidate: 20 };
 }

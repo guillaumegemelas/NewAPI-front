@@ -60,7 +60,8 @@ export default function Home(props) {
   );
 }
 
-export async function getStaticProps() {
+//test avec getServerSideProps() à la place de getStaticProps()
+export async function getServerSideProps() {
   const result = await fetch("http://localhost:3000/getnews");
   // const result = await fetch(
   //   "https://site--news-api-back--zqfvjrr4byql.code.run/getnews"
