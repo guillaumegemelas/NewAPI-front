@@ -50,7 +50,7 @@ export async function getStaticProps() {
 
   const data = await result.json();
 
-  //data renvoie bien un objet avec un tableau d'articles
+  //data renvoie bien un objet avec un tableau d'articles!
   console.log(data);
 
   return { props: { data } };
